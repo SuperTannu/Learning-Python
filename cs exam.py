@@ -83,25 +83,19 @@ print(Rag.values())
 print(Avengers.values())
 print(Revengers.values())'''
 
-
-
 Avengers=set()
 Revengers=set()
-
 Norbu=int(input("Enter the number of elements in Avengers: "))
 for i in range(Norbu):
     Electro=input("Enter the element "+str((i+1))+": ")
     Avengers.add(Electro)
 print("\n")
-
 Nor=int(input("Enter the number of elements in Revengers: "))
 for i in range(Nor):
     Elec=input("Enter the element "+str((i+1))+": ")
     Revengers.add(Elec)
 print("\n")
-
 Ragnarok=Avengers.union(Revengers)
-
 print(Avengers)
 print(Revengers)
 print(Ragnarok)
