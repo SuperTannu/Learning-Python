@@ -1,9 +1,10 @@
 
-from collections import Counter
-T="I am Tannu Babu"
-count=Counter(T)
-print(count)
-print(list(count.elements()))
-
-
-
+from collections import deque
+d=deque()
+d.append(4)
+d.append(5)
+print(d)
+d.appendleft(30)
+print(d)
+d.popleft()
+print(d)
