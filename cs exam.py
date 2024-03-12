@@ -100,11 +100,16 @@ for i in range(Nor):
     Revengers.add(Elec)
 print("\n")
 
-Ragnarok=Avengers.union(Revengers)
+Ragnarok=Avengers | Revengers #.union
+Destroy= Avengers & Revengers #.intersection
+Valhalla= Avengers^Revengers #.symmetric_difference
+
 
 print(Avengers)
 print(Revengers)
 print(Ragnarok)
+print(Destroy)
+print(Valhalla)
 
 
 
