@@ -65,6 +65,19 @@ print(profession)
 proff={name[i]:hero[i] for i in range(len(name))}
 print(proff)
 
-work={"Spider":"Photographer","Bat":"Philanthropist","Iron M":"Billionaire"}
+work={"Spider":"Photographer","Bat":"Philanthropist","Wonder Wo":"Archaeologist"}
 work={(key+"man" if key!="Bat" else "Superman" ):value if key!="Bat" else "Journalist" for (key,value) in work.items()}
 print(work)
+
+from random import choices
+bases=["A","G","C","T"]
+strand=choices(bases,k=12)
+dna={key:[value, "T" if value=="A" else "C" if value=="G" else "A" if value=="T" else "G"] for key,value in enumerate(strand)}
+print(dna)
+
+from string import printable
+
+details=["Id","Username","Password"]
+users=["Nitin","Preeti"]
+data=[{detail:(i+1 if detail=="Id" else users[i] if detail=="Username" else "".join(choices(printable,k=8))) for detail in details}for i in range(len(users))]
+print(data)
