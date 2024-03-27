@@ -54,7 +54,7 @@ print(bits)
 
 superman="IAmTejaswaniSharma"
 superman="".join([i if i.islower() else " "+i for i in superman])
-print(superman[1:])"""
+print(superman[1:])
 
 #Dictionary Comprehension
 name=["Bruce","Peter","Tony","Clark"]
@@ -80,4 +80,4 @@ from string import printable
 details=["Id","Username","Password"]
 users=["Nitin","Preeti"]
 data=[{detail:(i+1 if detail=="Id" else users[i] if detail=="Username" else "".join(choices(printable,k=8))) for detail in details}for i in range(len(users))]
-print(data)
+print(data)"""
