@@ -75,7 +75,7 @@ print(f'Verically Stacked: \n{vstack([A,B])}')
 print(f'Horizontally Stacked: \n{hstack([A,B])}')
 
 #Miscellaneous
-da=genfromtxt('a.txt',delimiter=',').astype('int32')
+da=genfromtxt('../../Python 1/a.txt', delimiter=',').astype('int32')
 print(f'Data from a.txt: \n{da}')
 print(f'Boolean Data from a.txt: \n{da>29}')
 print(f'List Indexing array A: \n{A[[2,3,1,4]]}')
